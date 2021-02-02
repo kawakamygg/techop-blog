@@ -6,7 +6,8 @@
     "build": "next build",
     "start": "next start",
     "type-check": "tsc",
-    "lint": "eslint . --ext .ts,.tsx"
+    "format": "prettier --write './**/*.{ts,tsx}'",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^4.14.2",
@@ -21,6 +22,10 @@
     "@types/node": "^12.12.21",
     "@types/react": "^16.9.16",
     "@types/react-dom": "^16.9.4",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "prettier": "^2.2.1",
+    "pretty-quick": "^3.1.0",
     "typescript": "4.0"
   },
   "license": "MIT"
