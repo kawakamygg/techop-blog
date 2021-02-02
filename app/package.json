@@ -5,9 +5,14 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "lint": "eslint . --ext .ts,.tsx"
   },
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.14.2",
+    "@typescript-eslint/parser": "^4.14.2",
+    "eslint": "^7.19.0",
+    "eslint-plugin-react": "^7.22.0",
     "next": "latest",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
