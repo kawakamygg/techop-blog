@@ -2,6 +2,7 @@ import React, { ReactNode } from 'react'
 import Head from 'next/head'
 
 import Header from './Header'
+import Footer from './Footer'
 
 type Props = {
   children?: ReactNode
@@ -17,10 +18,7 @@ const Layout: React.FC<Props> = ({ children, title = 'This is the default title'
     </Head>
     <Header />
     {children}
-    <footer>
-      <hr />
-      <span>I&#39;m here to stay (Footer)</span>
-    </footer>
+    <Footer />
   </div>
 )
 
