@@ -8,3 +8,12 @@ export type User = {
   id: number
   name: string
 }
+
+export type Article = {
+  id: string
+  title: string
+  content: string
+  auther: User
+  createdAt: Date
+  updatedAt: Date
+}
