@@ -1,0 +1,49 @@
+.s {
+  border: solid 1px #b4b4b4;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px #0000001a;
+  margin-bottom: .5rem;
+  padding: .75rem;
+
+  &_top {
+    margin-bottom: .5rem;
+  }
+
+  &_body {
+    margin-left: 1rem;
+  }
+
+  &_title {
+    color: #363636;
+    display: inline;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover {
+      color: #783dff;
+    }
+  }
+
+  &_posted {
+    font-size: .75rem;
+  }
+
+  &_tag {
+    border: solid 1px #c9c9c9;
+    border-radius: 5px;
+    color: #363636;
+    display: inline-block;
+    font-size: .75rem;
+    padding: .1rem .25rem;
+    text-decoration: none;
+
+    &:not(:last-child) {
+      margin-right: .5rem;
+    }
+  }
+
+  &_row:not(:last-child) {
+    margin-bottom: .35rem;
+  }
+}
