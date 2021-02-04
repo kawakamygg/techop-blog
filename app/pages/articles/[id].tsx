@@ -4,6 +4,7 @@ import { GetStaticProps, GetStaticPaths } from 'next'
 import { Article } from '../../interfaces'
 import { sampleArticleData } from '../../utils/sample-data'
 import Layout from '../../components/Layout'
+import ArticleContent from '../../components/ArticleContent'
 
 type Props = {
   article: Article
@@ -12,7 +13,7 @@ type Props = {
 const ArticlePage: React.FC<Props> = ({ article }: Props) => (
   <Layout title={article.title}>
     <h1>{article.title}</h1>
-    <p>{article.content}</p>
+    <ArticleContent content={article.content} />
   </Layout>
 )
 
