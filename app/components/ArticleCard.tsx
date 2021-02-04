@@ -21,9 +21,11 @@ const ArticleCard: React.FC<Props> = ({ article }: Props) => (
       </div>
       <div className={style.s_row}>
         <div className={style.s_tags}>
-          <a href="#" className={style.s_tag}>AWS</a>
-          <a href="#" className={style.s_tag}>Rails</a>
-          <a href="#" className={style.s_tag}>Dynamodb</a>
+          {article.tags.map((tag, index) => (
+            <a href="#" className={style.s_tag} key={index}>
+              {tag}
+            </a>
+          ))}
         </div>
       </div>
       <div className={style.s_row}>

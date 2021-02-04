@@ -14,6 +14,7 @@ export const sampleArticleData: Article[] = [
     id: 'AnxKyXkjHWhJexY',
     title: 'article_01',
     content: 'this is article_01',
+    tags: ['tagA', 'tagB', 'tagC'],
     auther: { id: 101, name: 'Alice' },
     createdAt: new Date(),
     updatedAt: new Date()
@@ -22,6 +23,7 @@ export const sampleArticleData: Article[] = [
     id: 'BnxKyXkjHWhJexY',
     title: 'article_02',
     content: 'this is article_02',
+    tags: ['sampleTagA', 'sampleTagB', 'sampleTagC'],
     auther: { id: 102, name: 'Bob' },
     createdAt: new Date(),
     updatedAt: new Date()
@@ -30,6 +32,7 @@ export const sampleArticleData: Article[] = [
     id: 'CnxKyXkjHWhJexY',
     title: 'article_03',
     content: 'this is article_03',
+    tags: ['hoge', 'fuga', 'piyo'],
     auther: { id: 103, name: 'Caroline' },
     createdAt: new Date(),
     updatedAt: new Date()

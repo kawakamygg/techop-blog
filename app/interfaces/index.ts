@@ -13,6 +13,7 @@ export type Article = {
   id: string
   title: string
   content: string
+  tags: string[]
   auther: User
   createdAt: Date
   updatedAt: Date
