@@ -14,7 +14,7 @@ export type Article = {
   title: string
   content: string
   tags: string[]
-  auther: User
+  author: User
   createdAt: Date
   updatedAt: Date
 }

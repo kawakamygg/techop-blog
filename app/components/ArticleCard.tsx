@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import { Article } from '../interfaces'
 import style from './ArticleCard.module.scss'
-import Auther from './Auther'
+import Author from './Author'
 
 type Props = {
   article: Article
@@ -11,7 +11,7 @@ type Props = {
 const ArticleCard: React.FC<Props> = ({ article }: Props) => (
   <div className={style.s}>
     <div className={style.s_top}>
-      <Auther auther={article.auther} />
+      <Author author={article.author} />
     </div>
     <div className={style.s_body}>
       <div className={style.s_row}>
