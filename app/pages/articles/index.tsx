@@ -7,7 +7,9 @@ const ArticlesPage: React.FC = () => (
   <Layout title="Articles">
     <h1>Articles</h1>
     {sampleArticleData.map((article, index) => (
-      <ArticleCard article={article} key={index} />
+      <div className="mb-2" key={index}>
+        <ArticleCard article={article} />
+      </div>
     ))}
   </Layout>
 )
